@@ -5,4 +5,9 @@ blinking glowing animated effect on the top of your website during the month
 of December. Simply include the CSS file and the JavaScript file and the plugin
 does the rest.
 
-![Screen Shot](screenshot.png)
+![Screen Shot](screenshot.png#thumbnail)
+
+img[src*="#thumbnail"] {
+   width: 50%;
+   height: 50%;
+}
