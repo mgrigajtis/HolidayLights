@@ -1,12 +1,15 @@
 # Holiday Lights (and more)
 
 Very simple JavaScript plugin to display festive and pleasing (but not
-over-powering) effects to your website based on the time of year.  Suitable
-for business websites.
+over-powering) effects to your website based on the time of year. Should be
+suitable for business websites.
 
-- December: small snow flakes animation, Christmas lights animation
 - January: small snow flakes animation
 - February: small snow flakes animation
+- September: leaves fall animation
+- October: leaves fall animation
+- November: leaves fall animation
+- December: small snow flakes animation, Christmas lights animation
 
 Designed with ease of use in mind.  Simply include the CSS and JavaScript
 file, no further code is required.
