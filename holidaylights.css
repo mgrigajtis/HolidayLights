@@ -338,6 +338,12 @@
   display: none;
 }
 
+@media (min-width: 300px) {
+  .snow_flake-600px {
+    display: inline-block;
+  }
+}
+
 @media (min-width: 600px) {
   .snow_flake-600px {
     display: inline-block;
