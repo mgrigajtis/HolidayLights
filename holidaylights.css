@@ -182,7 +182,7 @@
   width: 100%;
   text-align: center;
   z-index: 50;
-  overflow: hidden;
+  overflow: none;
 
   /* Pass-through click events */
   pointer-events: none;
@@ -410,7 +410,7 @@
   width: 100%;
   text-align: center;
   z-index: 50;
-  overflow: hidden;
+  overflow: none;
 
   /* Pass-through click events */
   pointer-events: none;
@@ -626,6 +626,7 @@
   }
 }
 
+
 /* Heart Animation Styling */
 @keyframes heartfade {
     0% {
@@ -638,7 +639,7 @@
 }
 
 .heart {
-    z-index: 999;
+    z-index: 50;
     animation: heartfade 6s linear;
     position: absolute;
 }

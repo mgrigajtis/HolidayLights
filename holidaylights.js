@@ -46,59 +46,47 @@ document.addEventListener('DOMContentLoaded', function() {
             generateHeart(event.pageX - brd.offsetLeft + cursorXOffset, event.pageY - brd.offsetTop + cursorYOffset, bound, start, scale);
         }
     }
-        var brd = document.createElement('div');
-        //document.body.insertBefore(brd, document.getElementById('hFF'));
 
-        var parentDiv = document.getElementById('divTabContent');
-        var childDiv;
+    var brd = document.createElement('div');
+		document.body.insertBefore(brd, document.getElementById('board'));
 
-        if ($('#hFF').hasClass('active')) {
-            childDiv = document.getElementById('hFF');
-        } else {
-            childDiv = document.getElementById('uW');
-        }
+    var duration = 3000;
+    var speed = 0.5;
+    var cursorXOffset = 0;
+    var cursorYOffset = 195;
+    var hearts = [];
+    var down = false;
+    var event = null;
 
-        parentDiv.insertBefore(brd, childDiv);
+    document.onmousedown = function (e) {
+        down = true;
+        event = e;
+    };
 
-        var duration = 3000;
-        var speed = 0.5;
-        var cursorXOffset = 0;
-        var cursorYOffset = 275;
-        var hearts = [];
-        var down = false;
-        var event = null;
+    document.onmouseup = function (e) {
+        down = false;
+    };
 
-        document.onmousedown = function (e) {
-            down = true;
-            event = e;
-        };
+    document.onmousemove = function (e) {
+        event = e;
+    };
 
-        document.onmouseup = function (e) {
-            down = false;
-        };
+    document.ontouchstart = function (e) {
+        down = true;
+        event = e.touches[0];
+    };
 
-        document.onmousemove = function (e) {
-            event = e;
-        };
+    document.ontouchend = function (e) {
+        down = false;
+    };
 
-        document.ontouchstart = function (e) {
-            down = true;
-            event = e.touches[0];
-        };
+    document.ontouchmove = function (e) {
+        event = e.touches[0];
+    };
 
-        document.ontouchend = function (e) {
-            down = false;
-        };
-
-        document.ontouchmove = function (e) {
-            event = e.touches[0];
-        };
-
-        var before = Date.now();
-        var id = setInterval(frame, 5);
-        var gr = setInterval(check, 100);
-
-
+    var before = Date.now();
+    var id = setInterval(frame, 5);
+    var gr = setInterval(check, 100);
   }
 
   function putUpChristmasLights() {
@@ -172,6 +160,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // JavaScripts starts with month 0, so we add 1
   var currentMonth = currentDate.getMonth() + 1;
 
+  // Get the day of the month
+  var currentDay = currentDate.getDate();
+
   // Autumn Actions
   if (currentMonth === 9 || currentMonth === 10 || currentMonth === 11) {
     // Leaves fall during the Autumn months
@@ -187,10 +178,16 @@ document.addEventListener('DOMContentLoaded', function() {
     if (currentMonth === 12) {
       putUpChristmasLights();
     }
+
+    // On Valentine's Day generate little hearts on click
+    if (currentMonth === 2 && currentDay === 14) {
+      generateHeartsOnClick();
+    }
   }
 
   /* For testing */
   // letItSnow();
   // leavesAreFalling();
   // putUpChristmasLights();
+  // generateHeartsOnClick();
 });
