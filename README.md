@@ -9,7 +9,7 @@ Very simple JavaScript plugin to display festive and pleasing (but not over-powe
 - November: leaves fall animation
 - December: small snow flakes animation, Christmas lights animation
 
-Designed with ease of use in mind.  Simply include the CSS and JavaScript
-file, no further code is required.
+Designed with ease of use in mind.  Simply include the JavaScript
+file in your html, no further code is required.
 
 ![Screen Shot](screenshot.png)

@@ -1,0 +1,30 @@
+{
+  "name": "holidaylights",
+  "version": "1.0.0",
+  "description": "Very simple JavaScript plugin to display festive and pleasing (but not over-powering) effects to your website based on the time of year. Should be suitable for business websites.",
+  "main": "holidaylights.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "uglifyjs holidaylights.js --compress --mangle --warn --output dist/holidaylights.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgrigajtis/HolidayLights.git"
+  },
+  "keywords": [
+    "Holiday",
+    "Lights",
+    "CSS3",
+    "Effects"
+  ],
+  "author": "Matthew Grigajtis <matthew.grigajtis@gmail.com> (https://mgrigajtis.github.io/)",
+  "devDependencies": {},
+  "dependencies": {
+    "uglify-js": "^3.3.11"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgrigajtis/HolidayLights/issues"
+  },
+  "homepage": "https://github.com/mgrigajtis/HolidayLights#readme"
+}
