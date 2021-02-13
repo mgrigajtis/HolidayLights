@@ -645,7 +645,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   .heart {
-      z-index: 50;
+      z-index: 500;
       animation: heartfade 6s linear;
       position: absolute;
   }
