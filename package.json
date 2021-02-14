@@ -1,6 +1,6 @@
 {
   "name": "holidaylights",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Very simple JavaScript plugin to display festive and pleasing (but not over-powering) effects to your website based on the time of year. Should be suitable for business websites.",
   "main": "holidaylights.js",
   "scripts": {
