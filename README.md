@@ -12,11 +12,11 @@ Very simple JavaScript plugin to display festive and pleasing (but not over-powe
 Designed with ease of use in mind.  Simply include the JavaScript
 file in your html, no further code is required.
 
-![Screen Shot](leaves.gif)
+![Screen Shot](leaves.gif)  
 Autumn, leaves are falling!
 
-![Screen Shot](snow.gif)
+![Screen Shot](snow.gif)  
 Winter, snow flakes falling!
 
-![Screen Shot](december.gif)
+![Screen Shot](december.gif)  
 December!  Christmas lights are up!
