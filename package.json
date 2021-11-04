@@ -20,7 +20,7 @@
   "author": "Matthew Grigajtis <matthew.grigajtis@gmail.com> (https://mgrigajtis.github.io/)",
   "devDependencies": {},
   "dependencies": {
-    "uglify-js": "^3.3.11"
+    "uglify-js": "^3.14.3"
   },
   "license": "ISC",
   "bugs": {
