@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   var styles = `
   body {
-    overflow: hidden !important;
+    overflow: auto !important;
   }
 
   #christmasLights {
@@ -645,7 +645,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   .heart {
-      z-index: 500;
+      z-index: 50;
       animation: heartfade 6s linear;
       position: absolute;
   }
